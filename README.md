@@ -1,14 +1,29 @@
 # Cool zsh
 
-# New:
-* fixed error message when your open web app
-* delete *open* command
-
 <img src="img/ex.png" class="shrinkToFit transparent">
 
 # commands: 
 
-* 
+* open web pages
+    * colab - google colab
+    * trans - translate
+    * gmail - Gmail
+    * etc...
+* language shortcuts:
+    * python3 - py
+    * nodejs - n
+    * pip3 - pip 
+* fast git commit:
+    * commit - create and push commit with name "some commit"
+* movemend shortcuts:
+    * dev - move Desktop
+* .zshrc:
+    * settings - open .zshrc in VS code
+    * restart - sourse .zshrc
+* create new web project:
+    * web - create *index.html* *style.css* *main.js*
+
+
 
 # install
 First you need to install **zsh** itself
