@@ -1,32 +1,48 @@
 # Красивый zsh v2
 
-## New:
-* убрана ошибка при запуске веб приложений 
-* убрана команда open
+# New:
+* fixed error message when your open web app
+* delete *open* command
 
-Для начала вам нужно установить сам zsh
+<img src="img/ex.png" class="shrinkToFit transparent">
 
-если вы пользуетесь дистрибутивом Linux Ubuntu или под системой Linux на Windows, то вам нужно прописать следующую команду:
+# commands: 
 
-> sudo apt install zsh
+* 
 
-### все zsh установлен !
+# install
+First you need to install **zsh** itself
 
-но по умолчанию у вас так и продолжит запускаться обычный bash 
+if you use the linux distribution ubuntu or under the linux system on windows, then you need to use the following command:
 
-* в MAC OS и Linux вы можете прописать команду:
+~~~bash
+sudo apt install zsh
+~~~
 
-> chsh -s /bin/zsh
+### zsh installed !
 
-* а вот в подсистеме Linux на Windows эта команда не всегда работает, поэтому в папках для каждой OS есть файл **.bashrc**, он отличается от того, который у вас стоит лишь первой строчкой в которой прописанно **zsh** 
+* but by default, you will continue to run the usual bash
 
-Вы можете сами вписать в **.bashrc** в первую строчку zsh открыв файл в любом редакторе кода 
+* in MAC OS and Linux, you can write the command:
+~~~bash
+chsh -s /bin/zsh
+~~~
 
-Это нужно что бы при запуске Bash сразу же вызывался zsh
+* but in the Linux subsystem on Windows, this command does not always work, so in the folders for each OS there is a file **. bashrc** replace or copy the contents of **.bashrc** for your system
 
-Но если вам лень вы можете заменить файл на тот который я положил в каждый файл 
+You can edit **.bashrc**: write in the first line of zsh by opening the file in any code editor
 
-<img src="https://ia.wampi.ru/2020/12/18/SNIMOK-EKRANA-2020-12-18-015035.png" alt="https://ia.wampi.ru/2020/12/18/SNIMOK-EKRANA-2020-12-18-015035.png" class="shrinkToFit transparent" width="904" height="496">
+### Open .bachrc in nano:
+~~~bash
+cd ~
+nano .bashrc
+~~~
 
-После всего проделанного, что бы получить такой красивый и функциональный zsh вам нужно заменить файл **.zshrc** на приложенный мной файл (или скопировать содержимое)
+This is necessary so that when Bash starts zsh is immediately called
+
+but if you are too lazy you can replace the file with the one i put in each folder
+
+```
+⛄After all this, to get such a beautiful and functional zsh, you need to replace the file **.zshrc** with the file I attached (or copy the contents)
+```
 
