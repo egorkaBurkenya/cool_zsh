@@ -42,7 +42,6 @@ This is necessary so that when Bash starts zsh is immediately called
 
 but if you are too lazy you can replace the file with the one i put in each folder
 
-```
+
 ⛄After all this, to get such a beautiful and functional zsh, you need to replace the file **.zshrc** with the file I attached (or copy the contents)
-```
 
