@@ -1,4 +1,4 @@
-# Красивый zsh v2
+# Cool zsh
 
 # New:
 * fixed error message when your open web app
