@@ -1,62 +1,48 @@
 # Cool zsh
+### Поговорим о том, как красиво настроить ваш терминал, сделать его более фунциональным и практичным ! 
 
-<img src="img/ex.png" class="shrinkToFit transparent">
+<img src="img/my_termianl.png" class="shrinkToFit transparent">
 
-# commands: 
+Для начало не много подготовительной информации: 
+* я буду настраивать оболочку `zsh` в WSL на Windows, но все настройки так же будут работать на Mac и Linux
+* Если вы пользователь Windows для начала вам нужно установить [WSL](https://docs.microsoft.com/ru-ru/windows/wsl/install-win10)
+* я использую терминал [Fluent Terminal](https://github.com/felixse/FluentTerminal) с темой [dracula](https://github.com/dracula/fluent-terminal)
 
-* open web pages
-    * colab - google colab
-    * trans - translate
-    * gmail - Gmail
-    * etc...
-* language shortcuts:
-    * python3 - py
-    * nodejs - n
-    * pip3 - pip 
-* fast git commit:
-    * commit - create and push commit with name "some commit"
-* movemend shortcuts:
-    * dev - move Desktop
-* .zshrc:
-    * settings - open .zshrc in VS code
-    * restart - sourse .zshrc
-* create new web project:
-    * web - create *index.html* *style.css* *main.js*
+*** 
+Как только все готово ! у вас открыт ваш и без того красивый терминал, мы можем начинать:
 
-
-
-# install
-First you need to install **zsh** itself
-
-if you use the linux distribution ubuntu or under the linux system on windows, then you need to use the following command:
-
-~~~bash
+Для начала нужно установить `zsh`:
+```bash
 sudo apt install zsh
-~~~
+```
+Далее настройте его таким оброзом, что бы при запуске терминала у вас поумолчанию открывался zsh
 
-### zsh installed !
+Отлично ! теперь все что вам осталось, в корне вашей системы найти файл `.zshrc`(настроки вашего терминала) и скопировать туда, один из приложенных мной файлов:
+* [old/.zshrc]()
+* [my/.zshrc]()
+***
+## Теперь поговорим про функционал и о том, как самому настраивать `zsh`:
+# Функционал
 
-* but by default, you will continue to run the usual bash
+Кратко расмотрим то, что теперь умеет наш терминал: 
 
-* in MAC OS and Linux, you can write the command:
-~~~bash
-chsh -s /bin/zsh
-~~~
+более краткий вызов языков и менеджера пакетов `pip3`
+```bash
+alias py='python3'
+alias pip='pip3'
+alias n='node'
+```
+<img src="img/n.png" class="shrinkToFit transparent">
 
-* but in the Linux subsystem on Windows, this command does not always work, so in the folders for each OS there is a file **. bashrc** replace or copy the contents of **.bashrc** for your system
-
-You can edit **.bashrc**: write in the first line of zsh by opening the file in any code editor
-
-### Open .bachrc in nano:
-~~~bash
-cd ~
-nano .bashrc
-~~~
-
-This is necessary so that when Bash starts zsh is immediately called
-
-but if you are too lazy you can replace the file with the one i put in each folder
+Быстрый коммит на GitHub:
+```bash
+alias commit='echo "add some new 🥉 ..."; 
+              git add .; 
+              echo "make some commit 🥈 ..."; 
+              git commit -m "some commit"; 
+              echo "push ✨ ..."; 
+              git push'
+```
 
 
-⛄After all this, to get such a beautiful and functional zsh, you need to replace the file **.zshrc** with the file I attached (or copy the contents)
 
